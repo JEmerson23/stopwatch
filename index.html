@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="JEmerson23" />
+    <link rel="stylesheet" href="/style/style.css" type="text/css" media="all" />
+    <title>stopwatch</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="project-title">stopwatch</h1>
+    </header>
+    <main>
+      <section class="m-content">
+       <div id="stopwatch">
+        <section id="stopwatch_display" class="stopwatch-display">
+          <span id="hour_display" class="stopwatch-display__number-display"></span>
+          <span class="stopwatch__number-display__separator">:</span>
+          <span id="minute_display" class="stopwatch-display__number-display"></span>
+          <span class="stopwatch__number-display__separator">:</span>
+          <span id="second_display" class="stopwatch-display__number-display"></span>
+          <span class="stopwatch__number-display__separator">'</span>
+          <span id="millisecond_display" class="stopwatch-display__number-display"></span>
+        </section>
+        <nav class="stopwatch__buttons-menu">
+          <button id="start_button" class="stopwatch__buttons">
+            <svg class="icon">
+              <polygon class="start-button-icon" points="24 16, 48 32, 24 48" style="fill:#000"></polygon>
+            </svg>
+          </button>
+          <button id="stop_button" class="stopwatch__buttons">
+            <svg class="icon">
+              <rect width="10" height="32" x="20" y="16"></rect>
+              <rect width="10" height="32" x="35" y="16"></rect>
+            </svg>
+          </button>
+          <button id="reset_button" class="stopwatch__buttons">
+            <svg class="icon">
+              <line x1="20" y1="45" x2="48" y2="45" style="stroke:#000;stroke-width:6;"/>
+              <line x1="45" y1="48" x2="45" y2="16" style="stroke:#000;stroke-width:6;"/>
+              <line x1="48" y1="19" x2="16" y2="19" style="stroke:#000;stroke-width:6;"/>
+              <line x1="19" y1="16" x2="19" y2="24" style="stroke:#000;stroke-width:6;"/>
+              <polygon points="11 24,  27 24, 19 32" fill="#000"></polygon>
+            </svg>
+          </button>
+        </nav>
+      </div>
+      </section>
+    </main>
+    <script src="/script/main.js" type="module" charset="utf-8"></script>
+  </body>
+</html>

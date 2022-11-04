@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+:root {
+  --stopwatch-display-border-color:#2c2c2c;
+  --stopwatch-main-box-width: 200px;
+  --number-display-bg-color: #fff;
+  --stopwatch-font-size: 1.1em;
+}
+
+body {
+  width: 100vw;
+}
+
+header {
+  margin: 2% auto 2% auto;
+}
+
+.project-title {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.m-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stopwatch-display, .stopwatch__buttons-menu{
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.stopwatch-display {
+  border: 2px solid var(--stopwatch-display-border-color);
+  border-radius: 5px;
+  flex-shrink: 1;
+  justify-content: space-evenly;
+  padding: 5%;
+  height: 75px;
+  width: var(--stopwatch-main-box-width);
+}
+
+.stopwatch-display__number-display {
+  background-color: var(--number-display-bg-color);
+  border-radius: 5px;
+  font-size: var(--stopwatch-font-size);
+  position: relative;
+}
+
+.stopwatch__number-display__separator {
+  font-size: var(--stopwatch-font-size);
+  font-weight: 600;
+}
+
+.stopwatch__buttons-menu {
+  justify-content: center;
+  width: var(--stopwatch-main-box-width);
+}
+
+.stopwatch__buttons {
+  all: unset;
+  cursor: pointer;
+  height: 64px;
+  width: 64px;
+}
+
+.icon {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+}
+
+.stopwatch__buttons > .icon {
+  align-self: center;
+  transition: opacity .5s, transform .25s;
+}
+
+.stopwatch__buttons:active > .icon {
+  opacity: 0.5;
+  transform: scale(0.8);
+}
